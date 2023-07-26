@@ -132,14 +132,14 @@ select:-webkit-autofill:focus {
 
 /* LOGO */
 .logo {
-  display: block;
+  display: flex;
   margin-right: auto;
 }
 .logo__link{
   display: block;
   width: 150px;
   height: 25px;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 .logo:hover{
   opacity: 0.8;
@@ -181,6 +181,7 @@ select:-webkit-autofill:focus {
   letter-spacing: 0.25px;
   text-decoration: none;
   white-space: nowrap;
+  /* transition: 4s  ease; */
 }
 .button--red {
   border-color: var(--button-red);
@@ -206,8 +207,6 @@ select:-webkit-autofill:focus {
 }
 
 .button-blue{
-  color: var(--text-color);
-  background-color: #f7f7f7;
   border-color: var(--button-blue);
   background-color: var(--button-blue);
   color: #fff;
@@ -217,13 +216,83 @@ select:-webkit-autofill:focus {
   background-color: #fff;
   color: var(--button-blue);
 }
+.button-blue:active{
+  border-color: var(--button-blue);
+  background-color: #fff;
+  color: var(--button-blue);
+  opacity: 0.6;
+}
+
+.button-grey {
+  border-color: #F7F7F7;
+  background-color: #F7F7F7;
+  color: var(--text-color-75);
+}
+.button-grey:hover{
+  border-color: var(--text-color-75);
+  background-color: #F7F7F7;
+  color: var(---text-color-75);
+
+}
+.button-grey:active{
+  border-color: var(--text-color-75);
+  background-color: #F7F7F7;
+  color: var(--text-color-75);
+  opacity: 0.6;
+}
 /* MAIN CONTENT */
 .main-content{
   flex-grow: 1;
 }
 
+/* HERO */
+.hero {
+  padding-top: 66px;
+  padding-bottom: 105px;
+  background-image: url(../img/oval.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 705px) 200px;
+}
 
+.hero__container{
+  display: flex;
+  align-items: center;
+}
+.hero__inner {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 540px;
+  margin-right: 68px;
+}
+.hero__heading {
+  margin-top: 47px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.15px;
+  color: var(--text-color);
+  margin-bottom: 24px;
+}
+.hero__description {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.hero__actions {
+  display: flex;
+}
+.hero__actions--item{
+  margin-right: 16px;
+}
 
+.hero__img {
+  flex-shrink: 0;
+  width: 578px;
+  height: 385px;
+  object-fit: cover;
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
