@@ -168,6 +168,7 @@ select:-webkit-autofill:focus {
   cursor: pointer;
 }
 
+
 /* BUTTON */
 .button {
   display: inline-block;
@@ -231,7 +232,7 @@ select:-webkit-autofill:focus {
 .button-grey:hover{
   border-color: var(--text-color-75);
   background-color: #F7F7F7;
-  color: var(---text-color-75);
+  color: var(--text-color-75);
 
 }
 .button-grey:active{
@@ -239,6 +240,33 @@ select:-webkit-autofill:focus {
   background-color: #F7F7F7;
   color: var(--text-color-75);
   opacity: 0.6;
+}
+
+/* SECTION */
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.section__info {
+  width: 100%;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.section__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: -0.1px;
+  color: var(--text-color);
+}
+.section__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
 }
 /* MAIN CONTENT */
 .main-content{
@@ -293,6 +321,7 @@ select:-webkit-autofill:focus {
   height: 385px;
   object-fit: cover;
 }
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
