@@ -376,7 +376,7 @@ select:-webkit-autofill:focus {
 .tabs__panel {
   display: none;
 }
-.tabs__item--active{
+.tabs__panel--active{
   display: block;
 }
 /* FEATURE TAB PANEL */
