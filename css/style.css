@@ -312,7 +312,7 @@ select:-webkit-autofill:focus {
 .hero__actions {
   display: flex;
 }
-.hero__actions--item{
+.hero__actions-item{
   margin-right: 16px;
 }
 
@@ -366,17 +366,17 @@ select:-webkit-autofill:focus {
 
 
 /* TABS PANELS */
-.tabs__panels {
+.tabspanel {
   padding-top: 75px;
   padding-bottom: 165px;
   background-image: url(../img/oval.svg);
   background-repeat: no-repeat;
   background-position: calc(50% - 580px) 156px;
 }
-.tabs__panel {
+.tabspanel {
   display: none;
 }
-.tabs__panel--active{
+.tabspanel--active{
   display: block;
 }
 /* FEATURE TAB PANEL */
