@@ -1,6 +1,6 @@
 const elsTabsLink = document.querySelectorAll('.js-tabs-link');
 const elsTabsItem = document.querySelectorAll('.tabs__item')
-const elsTabsPanel = document.querySelectorAll('.tabspanel')
+const elsTabsPanel = document.querySelectorAll('.tabspanel__item')
 
 /* DeactivateTabItems */
 function deactivateTabItem(){

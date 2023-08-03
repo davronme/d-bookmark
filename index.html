@@ -31,7 +31,7 @@
   </header>
 
   <!-- MAIN -->
-  <di class="main-content">
+  <div class="main-content">
     <!-- HERO -->
     <div class="hero">
       <div class="hero__container container">
@@ -76,7 +76,7 @@
           <!-- TABS PANELS -->
           <div class="tabspanel">
             <div class="container">
-              <div class="tabspanel" id="simple-bookmarking">
+              <div class="tabspanel__item tabspanel--active" id="simple-bookmarking">
                 <div class="feature-tab-panel">
                   <img class="feature-tab-panel__img" src="img/features-semple-bookmarking.svg" alt="Bookmark manager illustration" width="536" height="346">
                   <div class="feature-tab-panel__info">
@@ -89,7 +89,7 @@
                 </div>
               </div>
 
-              <div class="tabspanel tabspanel--active" id="speedy-searching">
+              <div class="tabspanel__item" id="speedy-searching">
                 <div class="feature-tab-panel">
                   <img class="feature-tab-panel__img" src="img/features-intelligent-search.svg" alt="Bookmark search illustration" width="468" height="393" >
                   <div class="feature-tab-panel__info">
@@ -102,7 +102,7 @@
                 </div>
               </div>
 
-              <div class="tabspanel" id="easy-sharing">
+              <div class="tabspanel__item" id="easy-sharing">
                 <div class="feature-tab-panel">
                   <img class="feature-tab-panel__img" src="img/features-easy-sharing.svg" alt="Bookmark share illustration" width="440" height="380">
                   <div class="feature-tab-panel__info">
@@ -119,12 +119,44 @@
     </section>
 
     <!-- DOWNLOAD THE EXTENSION -->
-    <section class="section">
+    <section class="extensions section">
       <div class="section__container container">
         <div class="section__info">
           <h2 class="section__heading">Download the extension</h2>
           <p class="section__description">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
         </div>
+
+        <ul class="extensions-list">
+          <li class="extensions_item extension">
+            <img class="extensions__img" src="img/chrome.svg" alt="Chrome logo" width="100" height="100">
+
+            <h3 class="extensions__heading">Add to Chrome</h3>
+
+            <p class="extensions__brawser-version">Minimum version 62</p>
+
+            <a class="extension__button button-blue button" href="#" target="_blank">Add & Install Extension</a>
+          </li>
+
+          <li class="extensions_item extension">
+            <img class="extensions__img" src="img/firefox.svg" alt="Firefox logo" width="100" height="100">
+
+            <h3 class="extensions__heading">Add to Firefox</h3>
+
+            <p class="extensions__brawser-version">Minimum version 55</p>
+
+            <a class="extension__button button-blue button" href="#" target="_blank">Add & Install Extension</a>
+          </li>
+
+          <li class="extensions_item extension">
+            <img class="extensions__img" src="img/opera-icon.svg" alt="Opera logo" width="100" height="100">
+
+            <h3 class="extensions__heading">Add to Opera</h3>
+
+            <p class="extensions__brawser-version">Minimum version 46</p>
+
+            <a class="extension__button button-blue button" href="#" target="_blank">Add & Install Extension</a>
+          </li>
+        </ul>
       </div>
     </section>
 
