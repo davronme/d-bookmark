@@ -2,6 +2,9 @@ const elsTabsLink = document.querySelectorAll('.js-tabs-link');
 const elsTabsItem = document.querySelectorAll('.tabs__item')
 const elsTabsPanel = document.querySelectorAll('.tabspanel__item')
 
+const elsAccordionItem = document.querySelectorAll('.js-accordion__item')
+const elsAccordionItemToggler = document.querySelectorAll('.accordion__item-toggler')
+
 /* DeactivateTabItems */
 function deactivateTabItem(){
   elsTabsItem.forEach(function (elTabsItem) {
@@ -38,8 +41,38 @@ if(elsTabsLink){
       // show active panel
       // const elTargetPanel = document.querySelector(`#${elTabsLink.href.split("#")[1]}`)
       const elTargetPanel = document.querySelector(elTabsLink.dataset.tabTarget)
-      elTargetPanel.classList.add('tabspanel--active')
+        elTargetPanel.classList.add('tabspanel--active')
 
     })
   })
 }
+
+function deactivateAccordionOpen(){
+  elsAccordionItem.forEach(function (elsAccordionItem) {
+    elsAccordionItem.classList.remove('accordion__item--open')
+})
+}
+
+if (elsAccordionItemToggler) {
+  elsAccordionItemToggler.forEach(function (elAccordionItemToggler) {
+    elAccordionItemToggler.addEventListener('click', function () {
+
+      // remove active class from tabs el
+      deactivateAccordionOpen();
+
+      // add avtive class to clikced tabs item
+      elAccordionItemToggler.closest('.accordion__item').classList.add('accordion__item--open')
+
+    })
+
+  })
+
+
+}
+
+// // FAQ
+// if (elsAccordionItem) {
+
+//   })
+
+// }
