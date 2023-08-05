@@ -168,6 +168,10 @@ select:-webkit-autofill:focus {
   cursor: pointer;
 }
 
+.sitenav__link:hover{
+  color: var(--red);
+}
+
 
 /* BUTTON */
 .button {
@@ -584,7 +588,7 @@ select:-webkit-autofill:focus {
 .subscribtion {
   text-align: center;
   padding-top: 58px;
-  padding-bottom: 74px;
+  padding-bottom: 70px;
   background-color: var(--blue);
 }
 
@@ -671,6 +675,59 @@ select:-webkit-autofill:focus {
 .subscribtion__input:placeholder-shown ~ .subscribtion__error {
   display: none;
 }
+
+/* SITE FOOTER */
+.site-footer {
+  background-color: var(--text-color);
+  padding-top: 26px;
+  padding-bottom: 32px;
+}
+.site-footer__wrapper{
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.site-footer__inner{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 510px;
+  flex-grow: 1;
+}
+
+.site-footer__logo {
+  margin-right: 64px;
+}
+.site-footer__sitenav {
+  flex-grow: 1;
+}
+.site-footer__sitenav .sitenav__list{
+  margin: 0;
+}
+.site-footer__sitenav-link{
+  color: #fff;
+}
+.site-footer__socials {
+  display: flex;
+}
+
+.socials__link:nth-child(1) {
+  margin-right: 40px;
+}
+.socials__link{
+  display: flex;
+}
+
+.socials__icon{
+  display: block;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+.socials__icon:hover{
+  color: var(--red);
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
